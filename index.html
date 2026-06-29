@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trade Handbook — Guia de Importação Brasil-Japão</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="#" class="nav-brand">
+        <span class="brand-icon">📘</span>
+        <span class="brand-text">Trade Handbook</span>
+      </a>
+      <div class="nav-right">
+        <div class="lang-switcher">
+          <button class="lang-btn active" data-lang="pt" title="Português">
+            <span class="flag">🇧🇷</span><span class="lang-label">PT</span>
+          </button>
+          <button class="lang-btn" data-lang="en" title="English">
+            <span class="flag">🇺🇸</span><span class="lang-label">EN</span>
+          </button>
+          <button class="lang-btn" data-lang="ja" title="日本語">
+            <span class="flag">🇯🇵</span><span class="lang-label">JP</span>
+          </button>
+        </div>
+        <a href="assets/Guia_Importar_Soja_Brasil_Japao.pdf" class="btn-pdf" download>
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M2 12v2h12v-2M8 2v8m0 0 3-3m-3 3L5 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <span class="pdf-label">PDF</span>
+        </a>
+        <button class="menu-toggle" id="menuToggle" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-inner">
+      <div class="sidebar-header">
+        <span class="sidebar-title" data-i18n="nav.title">Conteúdo</span>
+      </div>
+      <ul class="toc" id="toc">
+        <li><a href="#fase1" data-i18n="toc.f1">Fase 1: Pré-Contrato</a></li>
+        <li><a href="#fase2" data-i18n="toc.f2">Fase 2: Documentação Exportação</a></li>
+        <li><a href="#fase3" data-i18n="toc.f3">Fase 3: Transporte</a></li>
+        <li><a href="#fase4" data-i18n="toc.f4">Fase 4: Quarentena Vegetal (MAFF)</a></li>
+        <li><a href="#fase5" data-i18n="toc.f5">Fase 5: Inspeção Sanitária (MHLW)</a></li>
+        <li><a href="#fase6" data-i18n="toc.f6">Fase 6: Desembaraço Aduaneiro</a></li>
+        <li><a href="#fase7" data-i18n="toc.f7">Fase 7: Pós-Importação</a></li>
+        <li><a href="#fluxograma" data-i18n="toc.flow">Fluxograma</a></li>
+        <li><a href="#leis" data-i18n="toc.laws">Leis Aplicáveis</a></li>
+        <li><a href="#cronograma" data-i18n="toc.schedule">Cronograma</a></li>
+        <li><a href="#riscos" data-i18n="toc.risks">Riscos</a></li>
+        <li><a href="#fontes" data-i18n="toc.sources">Fontes</a></li>
+      </ul>
+    </div>
+  </aside>
+
+  <!-- OVERLAY -->
+  <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+  <!-- MAIN -->
+  <main class="main" id="main">
+
+    <!-- HERO -->
+    <section class="hero" id="intro">
+      <div class="hero-bg"></div>
+      <div class="hero-content">
+        <span class="hero-badge" data-i18n="hero.badge">Guia Verificado v2.0</span>
+        <h1 class="hero-title" data-i18n="hero.title">Importar Soja do Brasil para o Japão</h1>
+        <p class="hero-sub" data-i18n="hero.sub">Todas as etapas detalhadas conforme as leis e regulamentos japoneses — MAFF, MHLW, Alfândega, MAPA</p>
+        <div class="hero-meta">
+          <span>📅 29/Jun/2026</span>
+          <span>📄 12 seções</span>
+          <span>🌐 PT / EN / JP</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTENT -->
+    <div class="content">
+
+      <!-- FASE 1 -->
+      <section id="fase1" class="section">
+        <h2 class="section-title" data-i18n="s1.title">Fase 1: Pré-Contrato e Verificação Regulatória</h2>
+
+        <div class="card">
+          <h3 data-i18n="s1.h1">1.1 Classificação Tarifária e Tributação</h3>
+          <p data-i18n="s1.p1">Código SH (NCM): <strong>1201.90</strong> (soja, exceto semente). A soja em grão é classificada como alimento ou ração. <strong>Imposto de importação: ZERO</strong> — a tarifa geral, OMC e todos os Acordos (RCEP, CPTPP) são <em>Free</em>. Fonte: Japan Customs Tariff Schedule 2026.</p>
+          <p data-i18n="s1.p2">Imposto sobre consumo (<em>Consumption Tax</em>): <strong>8%</strong> para uso alimentício; <strong>10%</strong> para ração animal. Calculado sobre (valor CIF + imposto de importação = zero). O Brasil não possui EPA com o Japão, mas a tarifa geral já é zero.</p>
+        </div>
+
+        <div class="card">
+          <h3 data-i18n="s1.h2">1.2 Enquadramento Legal no Japão</h3>
+          <ul>
+            <li data-i18n="s1.l1">Uso alimentício (tofu, nattō, missô, leite de soja): Lei de Sanidade Alimentar, Lei de Rotulagem de Alimentos, Lei JAS.</li>
+            <li data-i18n="s1.l2">Ração animal: Lei de Segurança de Rações (<em>Feed Safety Law</em>).</li>
+            <li data-i18n="s1.l3">Semente (SH 1201.10): imposto zero, mas exige registro de variedade no MAFF e inspeção fitossanitária específica.</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3 data-i18n="s1.h3">1.3 Limites Máximos de Resíduos (MRLs)</h3>
+          <p data-i18n="s1.p3">O Japão opera um <strong>Sistema de Lista Positiva</strong> desde 2006. Cada agroquímico tem um MRL específico por produto. Se não houver MRL estabelecido para soja, aplica-se o limite uniforme de <strong>0,01 ppm</strong>. 24 agroquímicos são proibidos com tolerância zero. Consulte: <a href="https://jpn-pesticides-database.go.jp" target="_blank">jpn-pesticides-database.go.jp</a> e <a href="https://ffcr.or.jp" target="_blank">ffcr.or.jp</a>.</p>
+          <div class="callout warn">
+            <strong>⚠️ Crítico:</strong> <span data-i18n="s1.warn">Verifique os MRLs antes de contratar. Esta é a causa #1 de rejeição de embarques.</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3 data-i18n="s1.h4">1.4 Status OGM e Rastreabilidade</h3>
+          <p data-i18n="s1.p4">A soja é 1 das 8 culturas com rotulagem obrigatória de OGM no Japão. Três regimes de rotulagem:</p>
+          <ul>
+            <li><strong data-i18n="s1.ogm1">OGM confirmado</strong> <span data-i18n="s1.ogm1d">→ "Soja (Geneticamente Modificada)"</span></li>
+            <li><strong data-i18n="s1.ogm2">Não segregado</strong> <span data-i18n="s1.ogm2d">→ "Soja (Geneticamente Modificada Não Separada)"</span></li>
+            <li><strong data-i18n="s1.ogm3">Não-OGM (IP)</strong> <span data-i18n="s1.ogm3d">→ "Soja (Não Geneticamente Modificada)" — opcional, mas tolerância zero detectável desde 2023.</span></li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3 data-i18n="s1.h5">1.5 Verificação do Fornecedor Brasileiro</h3>
+          <p data-i18n="s1.p5">O Japão <strong>não exige</strong> registro CGC/MAPA para exportar soja. O exportador precisa apenas do <strong>RADAR Siscomex</strong> (Receita Federal). Solicite: COA (proteína, umidade, óleo), declaração de agroquímicos usados, declaração OGM/não-OGM. Portos típicos: Santos, Paranaguá, Rio Grande, Itaqui. Fonte: gov.br/agricultura.</p>
+        </div>
+
+        <div class="card">
+          <h3 data-i18n="s1.h6">1.6 Contrato e Incoterms</h3>
+          <p data-i18n="s1.p6">Recomendado: FOB (comprador controla frete) ou CIF (vendedor organiza até o porto japonês). Pagamento via <strong>Carta de Crédito (LC)</strong> confirmada por banco de primeira linha (Top 50), pagamento contra documentos.</p>
+        </div>
+      </section>
+
+      <!-- FASE 2 -->
+      <section id="fase2" class="section">
+        <h2 class="section-title" data-i18n="s2.title">Fase 2: Documentação de Exportação — Lado Brasileiro</h2>
+
+        <div class="card">
+          <h3 data-i18n="s2.h1">2.1 Documentos do Exportador Brasileiro</h3>
+          <ul>
+            <li data-i18n="s2.l1"><strong>Fatura Comercial</strong> — descritiva, com SH, quantidade, valor, Incoterms.</li>
+            <li data-i18n="s2.l2"><strong>Romaneio (Packing List)</strong> — pesos bruto/líquido, sistema métrico obrigatório.</li>
+            <li data-i18n="s2.l3"><strong>Conhecimento de Embarque (B/L)</strong> — original ou telex release.</li>
+            <li data-i18n="s2.l4"><strong>Certificado de Origem</strong> — opcional (tarifa zero), mas pode ser exigido.</li>
+            <li data-i18n="s2.l5"><strong>Certificado de Análise (COA)</strong> — proteína, umidade, óleo, impurezas.</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3 data-i18n="s2.h2">2.2 Certificado Fitossanitário (CF)</h3>
+          <p data-i18n="s2.p1"><strong>Obrigatório</strong> para toda soja, sem exceção. Emitido pelo MAPA via sistema <strong>e-Phyto</strong> (eletrônico, com QR Code, desde Portaria MAPA 749/2024). O Japão aceita formato digital. O CF deve atestar que a carga está livre das pragas listadas na Tabela 1-2 Anexa (MAFF Ordinance 73/1950).</p>
+        </div>
+
+        <div class="card">
+          <h3 data-i18n="s2.h3">2.3 Procedimentos no Brasil (SISCOMEX)</h3>
+          <p data-i18n="s2.p2">A empresa deve estar habilitada no <strong>RADAR Siscomex</strong> (Receita Federal). O processo usa o <strong>Portal Único Siscomex</strong>:</p>
+          <ol>
+            <li data-i18n="s2.o1">Emitir NF-e.</li>
+            <li data-i18n="s2.o2">Registrar a <strong>Declaração Única de Exportação (DU-E)</strong>.</li>
+            <li data-i18n="s2.o3">Solicitar CF e LPCO no módulo LPCO.</li>
+            <li data-i18n="s2.o4">Aguardar canal de parametrização da Receita (verde = automático).</li>
+            <li data-i18n="s2.o5">Embarque após desembaraço.</li>
+          </ol>
+        </div>
+      </section>
+
+      <!-- FASE 3 -->
+      <section id="fase3" class="section">
+        <h2 class="section-title" data-i18n="s3.title">Fase 3: Transporte e Chegada ao Japão</h2>
+
+        <div class="card">
+          <h3 data-i18n="s3.h1">3.1 Transporte Marítimo</h3>
+          <p data-i18n="s3.p1">Graneleiros Panamax (~60.000 DWT) ou Supramax (~50.000 DWT). Em 2025, MT exportou 223.400 t de grão + 311.940 t de farelo para o Japão. Rotas:</p>
+          <ul>
+            <li data-i18n="s3.r1">Santos → Yokohama via <strong>Panamá</strong>: ~22 dias</li>
+            <li data-i18n="s3.r2">Rio Grande → Nagoya via <strong>Cabo da Boa Esperança</strong>: ~28 dias</li>
+            <li data-i18n="s3.r3">Itaqui → Tóquio via <strong>Panamá</strong>: ~18 dias</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3 data-i18n="s3.h2">3.2 Notificação Antecipada (NACCS)</h3>
+          <p data-i18n="s3.p2">Todas as operações usam o <strong>NACCS</strong> (Nippon Automated Cargo and Port Consolidated System). A notificação de importação de alimentos pode ser feita até <strong>7 dias antes</strong> da chegada do navio (<em>Advance Notification System</em>).</p>
+        </div>
+      </section>
+
+      <!-- FASE 4 -->
+      <section id="fase4" class="section">
+        <h2 class="section-title" data-i18n="s4.title">Fase 4: Quarentena Vegetal (MAFF) — 1º Ponto de Controle</h2>
+
+        <div class="card">
+          <h3 data-i18n="s4.h1">4.1 Base Legal</h3>
+          <p data-i18n="s4.p1">Lei de Proteção Fitossanitária (Lei 151/1950), art. 8. O importador deve apresentar o <strong>Formulário 4</strong> ao Plant Protection Officer no porto. <strong>Não é necessário import permit</strong> — o Japão não exige permissão prévia para plantas.</p>
+        </div>
+
+        <div class="card">
+          <h3 data-i18n="s4.h2">4.2 Documentos</h3>
+          <ul>
+            <li data-i18n="s4.l1">Formulário 4 (Application for Plant Import Inspection)</li>
+            <li data-i18n="s4.l2">Certificado Fitossanitário ORIGINAL (e-Phyto)</li>
+            <li data-i18n="s4.l3">Cópia do B/L e Fatura</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3 data-i18n="s4.h3">4.3 Inspeção e Penalidades</h3>
+          <p data-i18n="s4.p2">O oficial inspeciona visualmente e coleta amostras (1-5% dos lotes). Pragas-alvo: Caryedon serratus, Callosobruchus spp., Trogoderma granarium. Se aprovada, emite o Certificado de Inspeção Fitossanitária. Violação: multa de até ¥3 milhões OU prisão de até 3 anos (art. 26).</p>
+        </div>
+      </section>
+
+      <!-- FASE 5 -->
+      <section id="fase5" class="section">
+        <h2 class="section-title" data-i18n="s5.title">Fase 5: Inspeção Sanitária (MHLW) — 2º Ponto de Controle</h2>
+
+        <div class="card">
+          <h3 data-i18n="s5.h1">5.1 Base Legal</h3>
+          <p data-i18n="s5.p1">Lei de Sanidade Alimentar (Lei 233/1947). O importador japonês envia o <strong>Formulário de Notificação de Importação de Alimentos</strong> (2 vias) à Estação de Quarentena do MHLW no porto.</p>
+        </div>
+
+        <div class="card">
+          <h3 data-i18n="s5.h2">5.2 Documentos</h3>
+          <ul>
+            <li data-i18n="s5.l1">Formulário de Notificação (via NACCS, módulo food)</li>
+            <li data-i18n="s5.l2">Certificado Fitossanitário (Fase 4)</li>
+            <li data-i18n="s5.l3">COA (recomendado)</li>
+            <li data-i18n="s5.l4">Resultados de testes de agroquímicos (se solicitado)</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3 data-i18n="s5.h3">5.3 Tipos de Inspeção</h3>
+          <ul>
+            <li><strong data-i18n="s5.t1">Revisão documental</strong> <span data-i18n="s5.t1d">→ liberação imediata</span></li>
+            <li><strong data-i18n="s5.t2">Monitoramento</strong> <span data-i18n="s5.t2d">→ ~100.000 casos/ano, amostragem aleatória, carga liberada durante testes</span></li>
+            <li><strong data-i18n="s5.t3">Ordem de inspeção</strong> <span data-i18n="s5.t3d">→ retenção de 100% até resultados aprovados</span></li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3 data-i18n="s5.h4">5.4 Consequências de Violação</h3>
+          <p data-i18n="s5.p2">1ª violação → monitoramento intensificado (30%). 2ª violação em 1 ano → retenção de 100% (60 testes aprovados para suspender). A carga deve ser reexportada, destruída ou desviada para uso não-alimentício.</p>
+        </div>
+      </section>
+
+      <!-- FASE 6 -->
+      <section id="fase6" class="section">
+        <h2 class="section-title" data-i18n="s6.title">Fase 6: Desembaraço Aduaneiro — 3º Ponto de Controle</h2>
+
+        <div class="card">
+          <h3 data-i18n="s6.h1">6.1 Documentos e Procedimento</h3>
+          <ul>
+            <li data-i18n="s6.l1">Declaração de Importação (Formulário C-5020) via NACCS</li>
+            <li data-i18n="s6.l2">Fatura, B/L, Packing List</li>
+            <li data-i18n="s6.l3">Certificado de Notificação (MHLW, Fase 5)</li>
+            <li data-i18n="s6.l4">Certificado de Inspeção Fitossanitária (MAFF, Fase 4)</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3 data-i18n="s6.h2">6.2 Tributos</h3>
+          <div class="tax-box">
+            <div class="tax-item">
+              <span class="tax-label" data-i18n="s6.tax1">Imposto de Importação</span>
+              <span class="tax-value zero">ZERO</span>
+            </div>
+            <div class="tax-item">
+              <span class="tax-label" data-i18n="s6.tax2">Consumption Tax (alimento)</span>
+              <span class="tax-value">8%</span>
+            </div>
+            <div class="tax-item">
+              <span class="tax-label" data-i18n="s6.tax3">Consumption Tax (ração)</span>
+              <span class="tax-value">10%</span>
+            </div>
+          </div>
+          <p data-i18n="s6.p1" style="margin-top:0.75rem;font-size:0.9rem;">Calculado sobre valor CIF. Prazo típico: 1-3 dias para liberação.</p>
+        </div>
+      </section>
+
+      <!-- FASE 7 -->
+      <section id="fase7" class="section">
+        <h2 class="section-title" data-i18n="s7.title">Fase 7: Conformidade Pós-Importação</h2>
+
+        <div class="card">
+          <h3 data-i18n="s7.h1">7.1 Rotulagem em Japonês</h3>
+          <p data-i18n="s7.p1">Exigida pela Lei de Rotulagem de Alimentos (CAA) para venda no varejo. Elementos obrigatórios:</p>
+          <ul>
+            <li data-i18n="s7.l1">Nome, ingredientes, peso líquido</li>
+            <li data-i18n="s7.l2">Data de validade, instruções de armazenamento</li>
+            <li data-i18n="s7.l3">País de origem: "Brasil"</li>
+            <li data-i18n="s7.l4">Alérgenos (soja é obrigatório)</li>
+            <li data-i18n="s7.l5">Rotulagem OGM conforme seção 1.4</li>
+            <li data-i18n="s7.l6">Tabela nutricional</li>
+            <li data-i18n="s7.l7">Nome e endereço do importador no Japão</li>
+          </ul>
+          <p data-i18n="s7.p2">Fonte: CAA "Food Labeling Guide" (shokuhyoji.jp).</p>
+        </div>
+
+        <div class="card">
+          <h3 data-i18n="s7.h2">7.2 Armazenamento e Fiscalização</h3>
+          <p data-i18n="s7.p3">Silos com controle de temperatura e umidade (<14%). Registros de rastreabilidade obrigatórios. MHLW realiza inspeções pós-mercado — violações podem gerar recall e intensificação de inspeções.</p>
+        </div>
+
+        <div class="card highlight">
+          <h3 data-i18n="s7.h3">📊 Dados Comerciais Reais (2025)</h3>
+          <p data-i18n="s7.p4">Mato Grosso exportou <strong>223.400 t de grão</strong> + <strong>311.940 t de farelo</strong> para o Japão em 2025, totalizando US$ 193,96 milhões. Fonte: SECEX/MDIC/IMEA.</p>
+        </div>
+      </section>
+
+      <!-- FLUXOGRAMA -->
+      <section id="fluxograma" class="section">
+        <h2 class="section-title" data-i18n="flow.title">Fluxograma do Processo</h2>
+        <div class="flowchart">
+          <div class="flow-step blue">
+            <div class="flow-num">1</div>
+            <div class="flow-text" data-i18n="flow.1">Pré-Contrato<br><small>MRLs, OGM, Fornecedor, LC</small></div>
+          </div>
+          <div class="flow-arrow">→</div>
+          <div class="flow-step green">
+            <div class="flow-num">2</div>
+            <div class="flow-text" data-i18n="flow.2">Exportação Brasil<br><small>DU-E, CF e-Phyto, Receita</small></div>
+          </div>
+          <div class="flow-arrow">→</div>
+          <div class="flow-step purple">
+            <div class="flow-num">3</div>
+            <div class="flow-text" data-i18n="flow.3">Transporte<br><small>18-28 dias marítimo</small></div>
+          </div>
+          <div class="flow-arrow">→</div>
+          <div class="flow-step orange">
+            <div class="flow-num">4</div>
+            <div class="flow-text" data-i18n="flow.4">MAFF Quarentena<br><small>Form. 4 + CF</small></div>
+          </div>
+          <div class="flow-arrow">→</div>
+          <div class="flow-step red">
+            <div class="flow-num">5</div>
+            <div class="flow-text" data-i18n="flow.5">MHLW Sanidade<br><small>Notificação + COA</small></div>
+          </div>
+          <div class="flow-arrow">→</div>
+          <div class="flow-step dark">
+            <div class="flow-num">6</div>
+            <div class="flow-text" data-i18n="flow.6">Alfândega Japão<br><small>C-5020, 8% taxa</small></div>
+          </div>
+          <div class="flow-arrow">→</div>
+          <div class="flow-step green">
+            <div class="flow-num">7</div>
+            <div class="flow-text" data-i18n="flow.7">Pós-Importação<br><small>Rotulagem, venda</small></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- LEIS -->
+      <section id="leis" class="section">
+        <h2 class="section-title" data-i18n="laws.title">Principais Leis Japonesas Aplicáveis</h2>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr><th data-i18n="laws.th1">Sigla</th><th data-i18n="laws.th2">Lei</th><th data-i18n="laws.th3">Órgão</th><th data-i18n="laws.th4">Finalidade</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>PPA</td><td data-i18n="laws.r1l">Plant Protection Act (151/1950)</td><td>MAFF</td><td data-i18n="laws.r1d">Prevenir pragas quarentenárias</td></tr>
+              <tr><td>FSA</td><td data-i18n="laws.r2l">Food Sanitation Act (233/1947)</td><td>MHLW</td><td data-i18n="laws.r2d">Segurança alimentar, MRLs, notificação</td></tr>
+              <tr><td>CL</td><td data-i18n="laws.r3l">Customs Law / Tariff Law</td><td>Min. Finanças</td><td data-i18n="laws.r3d">Tributação e permissão de importação</td></tr>
+              <tr><td>FLA</td><td data-i18n="laws.r4l">Food Labeling Act (70/2013)</td><td>CAA</td><td data-i18n="laws.r4d">Rotulagem, OGM, origem</td></tr>
+              <tr><td>JAS</td><td data-i18n="laws.r5l">JAS Law (175/1950)</td><td>MAFF</td><td data-i18n="laws.r5d">Padrões de qualidade</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="card" style="margin-top:1rem;">
+          <p data-i18n="laws.mou"><strong>Memorando MAPA-MAFF (Set/2024):</strong> Estabelece o "Brasil-Japan Dialogue on Food and Agriculture". Grupo de Trabalho Conjunto para segurança alimentar e comércio. O Japão não possui EPA com o Brasil — negociações no âmbito Mercosul-Japão.</p>
+        </div>
+      </section>
+
+      <!-- CRONOGRAMA -->
+      <section id="cronograma" class="section">
+        <h2 class="section-title" data-i18n="sched.title">Cronograma Estimado</h2>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th data-i18n="sched.th1">Etapa</th><th data-i18n="sched.th2">Prazo</th><th data-i18n="sched.th3">Responsável</th></tr></thead>
+            <tbody>
+              <tr><td data-i18n="sched.r1">Verificação regulatória</td><td>1-2 semanas</td><td data-i18n="sched.r1o">Comprador japonês</td></tr>
+              <tr><td data-i18n="sched.r2">Contratação / LC</td><td>1-3 semanas</td><td data-i18n="sched.r2o">Ambas</td></tr>
+              <tr><td data-i18n="sched.r3">Preparação Brasil</td><td>1-2 semanas</td><td data-i18n="sched.r3o">Exportador BR</td></tr>
+              <tr><td data-i18n="sched.r4">Despacho aduaneiro BR</td><td>2-5 dias</td><td data-i18n="sched.r4o">Exportador / despachante</td></tr>
+              <tr><td data-i18n="sched.r5">Frete marítimo</td><td>18-28 dias</td><td data-i18n="sched.r5o">Transportador</td></tr>
+              <tr><td data-i18n="sched.r6">Quarentena MAFF</td><td>1-3 dias</td><td data-i18n="sched.r6o">Despachante JP</td></tr>
+              <tr><td data-i18n="sched.r7">Sanidade MHLW</td><td>2-14 dias</td><td data-i18n="sched.r7o">Despachante JP</td></tr>
+              <tr><td data-i18n="sched.r8">Alfândega JP</td><td>1-3 dias</td><td data-i18n="sched.r8o">Despachante JP</td></tr>
+              <tr class="total"><td data-i18n="sched.total">TOTAL</td><td>5-9 semanas</td><td>-</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- RISCOS -->
+      <section id="riscos" class="section">
+        <h2 class="section-title" data-i18n="risk.title">Pontos Críticos de Risco</h2>
+        <div class="risk-list">
+          <div class="risk-item high">
+            <span class="risk-tag">1</span>
+            <p data-i18n="risk.r1"><strong>MRLs não verificados</strong> antes de contratar é a causa #1 de rejeição. Consulte jpn-pesticides-database.go.jp.</p>
+          </div>
+          <div class="risk-item high">
+            <span class="risk-tag">2</span>
+            <p data-i18n="risk.r2"><strong>CF com redação inadequada</strong> — a Tabela 1-2 exige formato específico. Desvio = rejeição.</p>
+          </div>
+          <div class="risk-item medium">
+            <span class="risk-tag">3</span>
+            <p data-i18n="risk.r3"><strong>Rastreabilidade OGM</strong> — tolerância zero detectável desde 2023 para não-OGM.</p>
+          </div>
+          <div class="risk-item medium">
+            <span class="risk-tag">4</span>
+            <p data-i18n="risk.r4"><strong>1 violação → 30% monitoramento</strong>; 2ª → 100% retenção (60 testes para suspender).</p>
+          </div>
+          <div class="risk-item low">
+            <span class="risk-tag">5</span>
+            <p data-i18n="risk.r5"><strong>Rotulagem incorreta</strong> viola Food Labeling Act — multas e recall.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- FONTES -->
+      <section id="fontes" class="section">
+        <h2 class="section-title" data-i18n="src.title">Fontes Oficiais de Consulta</h2>
+        <div class="sources-grid">
+          <a href="https://www.customs.go.jp/english/tariff/2026_04_01/data/e_12.htm" target="_blank" class="source-card">
+            <span class="source-icon">📊</span>
+            <span class="source-name">Japan Customs Tariff</span>
+            <span class="source-url">customs.go.jp</span>
+          </a>
+          <a href="https://www.maff.go.jp/pps/j/introduction/english.html" target="_blank" class="source-card">
+            <span class="source-icon">🌱</span>
+            <span class="source-name">MAFF Plant Protection</span>
+            <span class="source-url">maff.go.jp/pps</span>
+          </a>
+          <a href="https://jpn-pesticides-database.go.jp" target="_blank" class="source-card">
+            <span class="source-icon">🧪</span>
+            <span class="source-name">MRL Database (CAA)</span>
+            <span class="source-url">jpn-pesticides-database.go.jp</span>
+          </a>
+          <a href="https://www.mhlw.go.jp/english/topics/importedfoods/" target="_blank" class="source-card">
+            <span class="source-icon">🍽️</span>
+            <span class="source-name">MHLW Imported Foods</span>
+            <span class="source-url">mhlw.go.jp</span>
+          </a>
+          <a href="https://www.caa.go.jp/en/policy/food_labeling" target="_blank" class="source-card">
+            <span class="source-icon">🏷️</span>
+            <span class="source-name">CAA Food Labeling</span>
+            <span class="source-url">caa.go.jp</span>
+          </a>
+          <a href="https://www.gov.br/agricultura/pt-br/assuntos/inspecao/produtos-vegetal" target="_blank" class="source-card">
+            <span class="source-icon">🇧🇷</span>
+            <span class="source-name">MAPA Produtos Vegetais</span>
+            <span class="source-url">gov.br/agricultura</span>
+          </a>
+        </div>
+      </section>
+
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer-inner">
+        <p data-i18n="footer.disclaimer">Este guia foi verificado contra fontes oficiais em Junho/2026. Consulte sempre um despachante aduaneiro (<em>benrishi</em>) registrado no Japão antes de realizar uma operação real.</p>
+        <p class="footer-meta">
+          <span data-i18n="footer.made">Feito com</span> ❤️ <span data-i18n="footer.for">para</span> <a href="https://github.com/kuroneko83/trade-handbook" target="_blank">github.com/kuroneko83/trade-handbook</a>
+        </p>
+      </div>
+    </footer>
+
+  </main>
+
+  <script src="js/i18n.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
